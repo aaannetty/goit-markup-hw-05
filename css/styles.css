@@ -663,3 +663,46 @@ footer {
 .project-item:hover .card-info {
   transform: translateX(0);
 }
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  height: 576px;
+  background-color: #fff;
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.close:hover,
+.close:focus {
+  box-shadow: rgba(46, 47, 66, 0.16);
+}

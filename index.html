@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
 
+    <link rel="stylesheet" href="./js/modal.js" />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Studio</title>
@@ -405,5 +406,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="close" data-modal-close>
+          <svg class="close-button" width="8" height="8">
+            <use href="./images/sprite.svg#icon-close_button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
